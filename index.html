@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="/css/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">  
+  <title>Детский сад №25</title>
+</head>
+<body>
+  <!---- header--- -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__logo" data-scroll="#intro"><img src="../img/logo.svg" alt=""></div>
+        <nav class="nav" id="nav" >
+          <a class="nav__link" data-scroll="#main"  href="index.html">Главная</a>
+          <a class="nav__link" data-scroll="#food" href="#">Питание</a>
+          <a class="nav__link" data-scroll="#team" href="#">Команда</a>
+          <a class="nav__link" data-scroll="#gallery" href="#">Галерея</a>
+          <a class="nav__link" data-scroll="#articles" href="#">Новости</a>
+          <a href="other.html" class="nav__link" >Другое</a>
+        </nav>
+        <button class="burger" type="button" id="navToggle">
+          <span class="burger__line">1</span>
+          <span class="burger__line">2</span>
+          <span class="burger__line">3</span>
+          <span class="burger__line">4</span>
+      </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- -----intro------ -->
+
+  <div class="intro" id="intro" >
+    <div class="intro__slider" id="introSlider">
+      <div class="slider-item">
+          <div class="intro__slider-item" style="background-image: url(../img/intro-slider/slider__item1.jpeg)"></div>
+      </div>
+      <div class="slider-item">
+          <img class="intro__slider-photo" src="../img/intro-slider/slider__item2.jpg" alt="">
+      </div>
+      <div class="slider-item">
+        <img class="intro__slider-photo" src="../img/intro-slider/slider__item3.jpg" alt="">
+    </div>
+    <div class="slider-item">
+      <img class="intro__slider-photo" src="../img/intro-slider/slider__item4.jpg" alt="">
+  </div>
+  </div>
+    <div class="container">
+      <div class="intro__inner">
+      <div class="request-form request-form--intro" data-aos="fade-right">
+          <div class="request-form__header">
+              <h3 class="request-form__title">Возникли вопросы?</h3>
+              <div class="request-form__text">Заполните поля и получите информацию по интересующим вас вопросам</div>
+          </div>
+          <div class="request-form__content">
+              <form class="form" action="/" method="post" onsubmit="return validateForm()">
+                  <div class="form__group">
+                      <input id="name" class="input input--user" type="text" name="name" placeholder="Ваше Ф.И.О.">
+                      <span id="name-error" class="error-message"></span>
+                  </div>
+                  <div class="form__group">
+                      <input id="phone" class="input input--phone" type="tel" name="phone" placeholder="Ваш номер телефона">
+                      <span id="phone-error" class="error-message"></span>
+                  </div>
+                  <div class="form__group">
+                      <input id="email" class="input input--mail" type="text" name="email" placeholder="Ваша электронная почта">
+                      <span id="email-error" class="error-message"></span>
+                  </div>
+                  <button type="submit" class="btn btn--shadow btn--yellow btn--block">Отправить!</button>
+              </form>
+          </div>
+      </div>
+      
+      
+        <div class="intro__text" data-aos="fade-left">
+          <div class="intro__suptitle">ГУО "Детский сад №25 г.Речицы"</div>
+          <h1 class="intro__title">Добро<br>пожаловать</h1> 
+        </div>
+        <div class="intro__slider-arrows">
+          <button class="intro__slider-btn  intro__slider-btn--prev" id="introSliderPrev" type="button">Prev</button>
+          <button class="intro__slider-btn  intro__slider-btn--next" id="introSliderNext" type="button">Next</button>
+      </div>     
+      </div> 
+    </div>
+  </div>
+
+  <!------main----->
+  <section class="section" id="main" data-scrollspy="#main">
+    <div class="container">
+      <div class="main">
+        <h2 class="main-subtitle" data-aos="fade-right">Главная</h2>
+        <div class="main__item" data-aos="fade-in">
+          <h4 class="main__title">Питание</h4>
+          <div class="main__text">
+            Раздел 'Питание' на нашем сайте детского сада предлагает полезную и сбалансированную пищу для детей. Мы уделяем особое внимание качеству и свежести продуктов, чтобы обеспечить детям здоровое и вкусное питание. Наше меню разнообразно и адаптировано к детским потребностям, учитывая предпочтения и диетические ограничения.
+          </div>
+            <div class="main__footer">
+              <a href="food.html" class="main__link">Читать далее</a>
+            </div>
+        </div>
+        <div class="main__item" data-aos="fade-in" data-aos-delay="100">
+          <h4 class="main__title">Команда</h4>
+          <div class="main__text">
+            Фотогалерея нашего педагогического состава с подробным описанием каждого члена состава. 
+          </div>
+            <div class="main__footer">  
+              <a href="#" class="main__link">Читать далее</a>
+            </div>
+        </div>
+        <div class="main__item" data-aos="fade-in" data-aos-delay="200">
+          <h4 class="main__title">Галерея</h4>
+          <div class="main__text">
+            В нашей галерее с детьми вы найдете множество веселых и радостных моментов, запечатленных во время игр, занятий и мероприятий в нашем детском саду.
+          </div>
+            <div class="main__footer">
+              <a href="#" class="main__link">Читать далее</a>
+            </div>
+        </div>
+        <div class="main__item" data-aos="fade-in" data-aos-delay="300">
+          <h4 class="main__title">Новости</h4>
+          <div class="main__text">
+            Раздел 'Новости' на нашем сайте детского сада предлагает свежие и интересные обновления из нашей образовательной среды. Здесь вы найдете информацию о наших активностях, достижениях детей, интересных событиях, праздниках и других важных моментах, происходящих в нашем детском саду.
+          </div>
+            <div class="main__footer">
+              <a href="#" class="main__link">Читать далее</a>
+            </div>
+          </div> 
+      </div>
+    </div>
+  </section>
+
+  <!------food----->
+  <section class="section" id="food" data-scrollspy="#food">
+    <div class="container">
+      <h2 class="food__title" data-aos="fade-in" data-aos-delay="100">Питание</h2>
+      <div class="food__subtitle" data-aos="fade-in" >Детям предлагается домашнее, вкусное, разнообразное и сбалансированное 5-разовое питание, основанное на принципах здорового образа жизни. Ознакомиться с меню на каждый приём пищи вы можете ниже, по нажатию кнопки.</div>
+      <div class="food__container">
+      <div class="food__item" data-aos="fade-right"  data-aos-anchor=".food__item">
+        <img class="food__img" src="../img/food/bread.svg" alt="">
+          <h4 class="food__item-title">Выпечка</h4>
+        <div class="food__item-text">
+          <ul class="food__item-ul">
+            <li class="food__item-li">Белый хлеб</li>
+            <li class="food__item-li">Сухарики</li>
+            <li class="food__item-li">Сладкая выпечка</li>
+            <li class="food__item-li">Десерты</li>
+          </ul>
+        </div>
+      </div>
+      <div class="food__item" data-aos="fade-right" data-aos-delay="100" data-aos-anchor=".food__item">
+        <img class="food__img" src="../img/food/cereals.svg" alt="">
+          <h4 class="food__item-title">Крупы и бобовые</h4>
+        <div class="food__item-text">
+          <ul class="food__item-ul">
+            <li class="food__item-li">Рис</li>
+            <li class="food__item-li">Чечевица</li>
+            <li class="food__item-li">Нут</li>
+            <li class="food__item-li">Гречневая крупа</li>
+          </ul>
+        </div>
+      </div>
+      <div class="food__item" data-aos="fade-left" data-aos-delay="100" data-aos-anchor=".food__item">
+        <img class="food__img" src="../img/food/fish.svg" alt="">
+          <h4 class="food__item-title">Рыба</h4>
+        <div class="food__item-text">
+          <ul class="food__item-ul">
+            <li class="food__item-li">Хек</li>
+            <li class="food__item-li">Судак</li>
+            <li class="food__item-li">Минтай</li>
+            <li class="food__item-li">Лосось</li>
+            <li class="food__item-li">Палтус</li>
+          </ul>
+        </div>
+      </div>
+      <div class="food__item" data-aos="fade-left" data-aos-delay="200" data-aos-anchor=".food__item">
+        <img class="food__img" src="../img/food/fruits.svg" alt="">
+          <h4 class="food__item-title">Фрукты</h4>
+        <div class="food__item-text">
+          <ul class="food__item-ul">
+            <li class="food__item-li">Сезонные фрукты</li>
+            <li class="food__item-li">Малина</li>
+            <li class="food__item-li">Голубика</li>
+          </ul>
+        </div>
+      </div>
+      
+      <a href="food.html" class="btn btn--shadow btn--yellow">Просмотреть всё</a>    
+    </div>
+    </div>
+    </section>
+    
+    <!------team----->
+    <section class="section section--yellow" id="team" data-scrollspy="#team">
+      <div class="container">
+        <h2 class="section__title" data-aos="fade-right"><span>Наша </span> Команда</h2>
+      </div>
+      <div class="card-container">
+        <div class="card" onclick="openCardDetails(1)" data-aos="fade-in" data-aos-delay="100">
+          <img src="../img/team/command8.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Директор</h3>
+            <h4 class="overlay__subtitle">Ольга Галенко</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">15 лет</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">С 2015 года</h4>
+          </div>
+        </div>
+        
+        <div class="card" onclick="openCardDetails(2)" data-aos="fade-in" data-aos-delay="200">
+          <img src="../img/team/command2.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Руководитель театральной студии</h3>
+            <h4 class="overlay__subtitle">Алёна Жуковская</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">5 лет</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">С 2017 года</h4>
+          </div>
+        </div>
+        
+        <div class="card" onclick="openCardDetails(3)" data-aos="fade-in" data-aos-delay="300">
+          <img src="../img/team/command3.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Руководитель танцевальной студии</h3>
+            <h4 class="overlay__subtitle">Алиса Кузнецова</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">6 лет тренерского стажа с детьми</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">C 2018 года</h4>
+          </div>
+        </div>
+        
+        <div class="card" onclick="openCardDetails(4)" data-aos="fade-in" data-aos-delay="400">
+          <img src="../img/team/command4.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Воспитатель</h3>
+            <h4 class="overlay__subtitle">Анастасия Логвинова</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">4 года воспитателем</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">С 2016 года</h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card-details" onclick="closeCardDetails(event)">
+        <div class="card-details-content">
+          <h2 id="card-details-title-1"></h2>
+          <p id="card-details-description-1"></p>
+          <h2 id="card-details-title-2"></h2>
+          <p id="card-details-description-2"></p>
+        </div>
+      </div>
+      <a href="" class="btn team--btn btn--shadow btn--yellow">Подробнее</a>
+    </section>
+
+<!------mission----->
+
+    <section class="section" >
+      <div class="container">
+        <h2 class="mission-title" >Наша цель</h2>
+        <div class="mission" data-aos="slide-up" data-aos-duration="1250">
+          <h3 class="mission__title">Игры, дружба, общение, обучение - истинная цель нашего детского сада!</h3>
+          <h4 class="mission__subtitle">Оставьте своего ребенка в надежных руках нашего детского сада. Радость общения, дружба и забота о каждом малыше - наша главная задача! Вместе с нами каждый день - праздник!</h4>  
+        </div>
+      </div>
+    </section>
+
+<!------gallery------>
+    <div class="container" id="gallery" data-scrollspy="#gallery">
+      <h2 class="gallery__title" data-aos="fade-left">Галерея</h2>
+    </div>
+    <div class="gallery" data-aos="fade-right">
+      <div class="container">
+        <div class="gallery__slider" id="gallerySlider">
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img1.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img2.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img3.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img4.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img14.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img6.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img7.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img8.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img9.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img15.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img11.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img12.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item">
+            <div class="gallery__item">
+              <div class="gallery__photo">
+                <img class="gallery__img" src="../img/gallery/gallery-img13.jpeg" alt="">
+              </div>
+              <div class="gallery__content">
+                <div class="gallery__text">В нашем детском саду прошло замечательное мероприятие, посвященное спорту! Это был день, наполненный различными играми и упражнениями, которые помогли нашим детям развить свои физические возможности и укрепить здоровье.
+                  <br>
+                  Мы организовали множество интересных мероприятий, включая забеги, эстафеты, игры с мячом, а также другие упражнения. Мы хотели, чтобы наши дети научились важности здорового образа жизни и физической активности.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!----------articles---------->
+
+    <section class="section" id="articles" data-scrollspy="#articles">
+      <div class="container">
+        <h2 class="section__title" data-aos="fade-in"><span>Новостной </span>Блог</h2>
+        <article class="articles">
+          <div class="articles__item" data-aos="fade-right" data-aos-anchor=".articles">
+            <div class="articles__title"><a href="#">Новость дня</a></div>
+            <div class="articles__text">Сегодня в нашем детском саду прошел День здоровья! Весь день наши дети учились, как правильно ухаживать за своим телом и душой, а также познакомились с различными аспектами здорового образа жизни.</div>
+            <div class="articles__footer">
+              <time class="articles__date" pubdate="13-03-2022">13 Марта, 2023</time>
+            </div>
+          </div>
+          <div class="articles__item" data-aos="fade-left" data-aos-anchor=".articles">
+            <div class="articles__title"><a href="#">Важное оъявление</a></div>
+            <div class="articles__text">Приглашаем вас и ваших детей на наш детский утренник, посвященный встрече весны! Мы приготовили для вас и ваших малышей яркую и веселую программу, которая поднимет настроение и наполнит ваш день энергией. Вас ждут танцы, песни, игры и многое другое! </div>
+            <div class="articles__footer">
+              <time class="articles__date" pubdate="13-03-2022">11 Марта, 2023</time>
+            </div>
+          </div>
+          <div class="articles__item" data-aos="fade-right" data-aos-anchor=".articles">
+            <div class="articles__title"><a href="#">Уважаемые родители и опекуны!</a></div>
+            <div class="articles__text">Мы рады сообщить вам, что в нашем детском саду начат ремонт наших детских площадок. Мы стремимся обеспечить безопасное и здоровое окружение для наших детей, и поэтому мы инвестируем в обновление наших площадок.</div>
+            <div class="articles__footer">
+              <time class="articles__date" pubdate="13-03-2022">08 Марта, 2023</time>
+            </div>
+          </div>
+          <div class="articles__item" data-aos="fade-left" data-aos-anchor=".articles">
+            <div class="articles__title"><a href="#">Уважаемые родители и опекуны!</a></div>
+            <div class="articles__text">В этот замечательный день в 12:00 пройдет мерроприятие посвященное правилам дорожного движения.</div>
+            <div class="articles__footer">
+              <time class="articles__date" pubdate="13-03-2022">03 Марта, 2023</time>
+            </div>
+          </div>
+        </article>
+        <a class="btn btn--yellow btn--shadow" data-aos="fade-in" href="blog.html"><span>Посетить блог</span></a>
+      </div>
+    </section>
+
+<!----------footer---------->
+
+    <footer class="footer">
+      <div class="container">
+        <img class="footer__logo" src="../img/logo_hover.svg" alt="">
+        <address class="footer__contacts">
+          <p>Ул. Советская д. 81, г. Речица, Гомельская область, Республика Беларусь</p>
+          <p>Связь с нами: <a href="tel:+375171234567">+375 (17) 123-45-67</a>
+          Электронная почта: <a href="mailto:sad25rechitsa@mail.com">sad25rechitsa@mail.com</a></p>
+          <p>Время работы: Пн-Пт 8:00-19:00</p>
+        </address>
+      </div>
+    </footer>
+
+<!----------JS---------->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script type="text/javascript" src="../js/aos.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+  </body>
+</html>

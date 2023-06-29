@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Другое</title><title>Детский сад №25</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/css/other.css">
+    </head>
+    <body>
+      
+      <!-- burger -->
+      
+      <button class="sidebar-toggle fixed-sidebar-toggle">
+        <span class="burger__line">1</span>
+        <span class="burger__line">2</span>
+        <span class="burger__line">3</span>
+        <span class="burger__line">4</span>
+      </button>
+      
+      <!-- Боковое меню -->
+  
+      <div class="sidebar">
+        <ul class="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li class="menu__list"><a href="">О нас</a>
+            <ul class="menu__drop">
+              <li><a href="about-time.html" #="">Графики работы</a></li>
+              <li><a href="about-contacts.html" #="">Наши контакты</a></li>
+              <li><a href="about-ustav.html" #="">Устав</a></li>
+              <li><a href="about-team.html" #="">Наши сотрудники</a></li>
+            </ul>
+          </li>
+          <li><a href="one-window.html">Одно окно</a></li>
+          <li><a href="food.html">Питание</a></li>
+          <li class="menu__list"><a href="">Родителям</a>
+            <ul class="menu__drop">
+              <li><a href="" #="">Приём ребенка в ГУО</a></li>
+              <li><a href="" #="">Образовательные услуги</a></li>
+              </ul>
+          </li>
+          <li><a href="">Новости</a></li>
+          <li><a href="mailus.html">Обратная связь</a></li>
+          <li><a href="">Безопасность жизнедеятельности дошкольников</a></li>
+          <li><a href="">Работа по Декрету №18</a></li>
+          <li><a href="">МЧС информирует</a></li>
+        </ul>
+      </div>
+
+
+    <!-- team -->
+    <section class="section section--yellow" id="team" data-scrollspy="#team">
+      <div class="container">
+        <h2 class="section__title" data-aos="fade-right"><span>Наша </span> Команда</h2>
+      
+      <div class="card-container">
+        <div class="card" onclick="openCardDetails(1)" data-aos="fade-in" data-aos-delay="100">
+          <img src="../img/team/command8.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Заведующий</h3>
+            <h4 class="overlay__subtitle">Ольга Галенко</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">15 лет</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">С 2015 года</h4>
+          </div>
+        </div>
+        
+        <div class="card" onclick="openCardDetails(2)" data-aos="fade-in" data-aos-delay="200">
+          <img src="../img/team/command2.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Руководитель театральной студии</h3>
+            <h4 class="overlay__subtitle">Алёна Жуковская</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">5 лет</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">С 2017 года</h4>
+          </div>
+        </div>
+        
+        <div class="card" onclick="openCardDetails(3)" data-aos="fade-in" data-aos-delay="300">
+          <img src="../img/team/command3.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Руководитель танцевальной студии</h3>
+            <h4 class="overlay__subtitle">Алиса Кузнецова</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">6 лет тренерского стажа с детьми</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">C 2018 года</h4>
+          </div>
+        </div>
+        
+        <div class="card" onclick="openCardDetails(4)" data-aos="fade-in" data-aos-delay="400">
+          <img src="../img/team/command4.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Воспитатель</h3>
+            <h4 class="overlay__subtitle">Анастасия Логвинова</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">4 года воспитателем</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">С 2016 года</h4>
+          </div>
+        </div>
+        
+
+        <div class="card" onclick="openCardDetails(5)" data-aos="fade-in" data-aos-delay="400">
+          <img src="../img/team/command5.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Повар</h3>
+            <h4 class="overlay__subtitle">Валерий Левчук</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">5 лет поваром</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">С 2019 года</h4>
+          </div>
+        </div>
+        
+
+        <div class="card" onclick="openCardDetails(6)" data-aos="fade-in" data-aos-delay="400">
+          <img src="../img/team/command6.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Воспитатель</h3>
+            <h4 class="overlay__subtitle">Галина Кириленко</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">4 года педагогом раннего развития</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">С 2018 года</h4>
+          </div>
+        </div>
+      
+
+        <div class="card" onclick="openCardDetails(7)" data-aos="fade-in" data-aos-delay="400">
+          <img src="../img/team/command7.jpg" alt="Фото 1">
+          <div class="overlay">
+            <h3 class="overlay__title">Воспитатель</h3>
+            <h4 class="overlay__subtitle">Елена Рендова</h4>
+            <h3 class="overlay__title">Стаж работы</h3>
+            <h4 class="overlay__subtitle">2 года воспитателем дошкольного учреждения</h4>
+            <h3 class="overlay__title">В команде</h3>
+            <h4 class="overlay__subtitle">С 2018 года</h4>
+          </div>
+        </div>
+
+
+      <div class="card" onclick="openCardDetails(8)" data-aos="fade-in" data-aos-delay="400">
+        <img src="../img/team/command9.jpg" alt="Фото 1">
+        <div class="overlay">
+          <h3 class="overlay__title">Учитель английского языка</h3>
+          <h4 class="overlay__subtitle">Зинаида Макусь</h4>
+          <h3 class="overlay__title">Стаж работы</h3>
+          <h4 class="overlay__subtitle">Более 20 лет</h4>
+          <h3 class="overlay__title">В команде</h3>
+          <h4 class="overlay__subtitle">С 2016 года</h4>
+        </div>
+      </div>
+
+      <div class="card" onclick="openCardDetails(9)" data-aos="fade-in" data-aos-delay="400">
+        <img src="../img/team/command10.jpg" alt="Фото 1">
+        <div class="overlay">
+          <h3 class="overlay__title">Воспитатель</h3>
+          <h4 class="overlay__subtitle">Ирина Чернышёва</h4>
+          <h3 class="overlay__title">Стаж работы</h3>
+          <h4 class="overlay__subtitle">12 лет в дошкольных учреждениях</h4>
+          <h3 class="overlay__title">В команде</h3>
+          <h4 class="overlay__subtitle">С 2017 года</h4>
+        </div>
+      </div>
+
+      <div class="card" onclick="openCardDetails(10)" data-aos="fade-in" data-aos-delay="400">
+        <img src="../img/team/command11.jpg" alt="Фото 1">
+        <div class="overlay">
+          <h3 class="overlay__title">Учитель дефектолог</h3>
+          <h4 class="overlay__subtitle">Людмила Лайковская</h4>
+          <h3 class="overlay__title">Стаж работы</h3>
+          <h4 class="overlay__subtitle">Более 20 лет</h4>
+          <h3 class="overlay__title">В команде</h3>
+          <h4 class="overlay__subtitle">С 2018 года</h4>
+        </div>
+      </div>
+
+      <div class="card" onclick="openCardDetails(11)" data-aos="fade-in" data-aos-delay="400">
+        <img src="../img/team/command12.jpg" alt="Фото 1">
+        <div class="overlay">
+          <h3 class="overlay__title">Учитель музыки, вокала и фортепиано</h3>
+          <h4 class="overlay__subtitle">Оксана Гришан</h4>
+          <h3 class="overlay__title">Стаж работы</h3>
+          <h4 class="overlay__subtitle">15 лет, учитель музыки</h4>
+          <h3 class="overlay__title">В команде</h3>
+          <h4 class="overlay__subtitle">С 2015 года</h4>
+        </div>
+      </div>
+
+      <div class="card" onclick="openCardDetails(12)" data-aos="fade-in" data-aos-delay="400">
+        <img src="../img/team/command13.jpg" alt="Фото 1">
+        <div class="overlay">
+          <h3 class="overlay__title">Руководитель студии брейк-данса</h3>
+          <h4 class="overlay__subtitle">Рустам Орипов</h4>
+          <h3 class="overlay__title">Стаж работы</h3>
+          <h4 class="overlay__subtitle">Более 7 лет тренерской деятельности</h4>
+          <h3 class="overlay__title">В команде</h3>
+          <h4 class="overlay__subtitle">С 2017 года</h4>
+        </div>
+      </div>
+
+      <div class="card" onclick="openCardDetails(13)" data-aos="fade-in" data-aos-delay="400">
+        <img src="../img/team/command14.jpg" alt="Фото 1">
+        <div class="overlay">
+          <h3 class="overlay__title">Врач-педиатр</h3>
+          <h4 class="overlay__subtitle">Юлия Орлевич</h4>
+          <h3 class="overlay__title">Стаж работы</h3>
+          <h4 class="overlay__subtitle">5 лет</h4>
+          <h3 class="overlay__title">В команде</h3>
+          <h4 class="overlay__subtitle">С 2017 года</h4>
+        </div>
+      </div>
+
+      <div class="card" onclick="openCardDetails(14)" data-aos="fade-in" data-aos-delay="400">
+        <img src="../img/team/command15.jpg" alt="Фото 1">
+        <div class="overlay">
+          <h3 class="overlay__title">Воспитатель</h3>
+          <h4 class="overlay__subtitle">Ирина Чекан</h4>
+          <h3 class="overlay__title">Стаж работы</h3>
+          <h4 class="overlay__subtitle">7 лет</h4>
+          <h3 class="overlay__title">В команде</h3>
+          <h4 class="overlay__subtitle">С 2015 года</h4>
+        </div>
+      </div>
+      </div>
+      
+      <div class="card-details" onclick="closeCardDetails(event)">
+        <div class="card-details-content">
+          <h2 id="card-details-title-1"></h2>
+          <p id="card-details-description-1"></p>
+          <h2 id="card-details-title-2"></h2>
+          <p id="card-details-description-2"></p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <img class="footer__logo" src="../img/logo_hover.svg" alt="">
+        <address class="footer__contacts">
+          <p>Ул. Советская д. 81, г. Речица, Гомельская область, Республика Беларусь</p>
+          <p>Связь с нами: <a href="tel:+375171234567">+375 (17) 123-45-67</a>
+          Электронная почта: <a href="mailto:sad25rechitsa@mail.com">sad25rechitsa@mail.com</a></p>
+          <p>Время работы: Пн-Пт 7:00-19:00</p>
+        </address>
+      </div>
+    </footer>
+
+    <script src="/js/other.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Детский сад №25</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/other.css">
+</head>
+<body>
+
+  
+<!-- Боковое меню -->
+
+<button class="sidebar-toggle fixed-sidebar-toggle">
+  <span class="burger__line">1</span>
+  <span class="burger__line">2</span>
+  <span class="burger__line">3</span>
+  <span class="burger__line">4</span></button>
+
+  
+  <!-- sidebar -->
+  <div class="sidebar">
+    <ul class="menu">
+      <li><a href="index.html">Главная</a></li>
+      <li class="menu__list"><a href="">О нас</a>
+        <ul class="menu__drop">
+          <li><a href="about-time.html" #="">Графики работы</a></li>
+          <li><a href="about-contacts.html" #="">Наши контакты</a></li>
+          <li><a href="about-ustav.html" #="">Устав</a></li>
+          <li><a href="about-team.html" #="">Наши сотрудники</a></li>
+        </ul>
+      </li>
+      <li><a href="one-window.html">Одно окно</a></li>
+      <li><a href="food.html">Питание</a></li>
+      <li class="menu__list"><a href="">Родителям</a>
+        <ul class="menu__drop">
+          <li><a href="" #="">Приём ребенка в ГУО</a></li>
+          <li><a href="" #="">Образовательные услуги</a></li>
+          </ul>
+      </li>
+      <li><a href="">Новости</a></li>
+      <li><a href="mailus.html">Обратная связь</a></li>
+      <li><a href="">Безопасность жизнедеятельности дошкольников</a></li>
+      <li><a href="">Работа по Декрету №18</a></li>
+      <li><a href="">МЧС информирует</a></li>
+    </ul>
+  </div>
+
+<!-- form -->
+  <div class="wrapper">
+    <div class="container">
+    <div class="form">
+      <form action="#" id="form" class="form__body">
+        <h1 class="form__title">Обратная связь с нами!</h1>
+        <div class="form__item">
+          <label for="formName" class="form__label">Имя*:</label>
+          <input type="text" id="formName" name="name" class="form__input _req">
+          <div id="nameError" class="error"></div>
+        </div>
+        <div class="form__item">
+          <label for="formEmail" class="form__label">E-mail*:</label>
+          <input type="text" id="formEmail" name="email" class="form__input _req _email">
+          <div id="emailError" class="error"></div>
+        </div>
+        <div class="form__item">
+          <label for="formTel" class="form__label ">Номер телефона*:</label>
+          <input type="text" id="formTel" name="tel" class="form__input _req">
+          <div id="telError" class="error"></div>
+        </div>
+        <div class="form__item">
+          <div class="form__title">Выберите группу:</div>
+          <div class="options">
+            <div class="options__item">
+              <input id="formGroupA" type="radio" value="A" name="group" class="options__input">
+              <label for="formGroupA" class="options__label"><span>Группа А</span></label>
+            </div>
+            <div class="options__item">
+              <input id="formGroupB" type="radio" value="B" name="group" class="options__input">
+              <label for="formGroupB" class="options__label"><span>Группа Б</span></label>
+            </div>
+            <div class="options__item">
+              <input id="formGroupC" type="radio" value="C" name="group" class="options__input">
+              <label for="formGroupC" class="options__label"><span>Группа В</span></label>
+            </div>
+            <div class="options__item">
+              <input id="formGroup0" checked type="radio" value="0" name="group" class="options__input">
+              <label for="formGroup0" class="options__label"><span>Моё письмо не связано с группой</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="form__item">
+          <label for="formMessage" class="form__label">Ваше сообщение</label>
+          <textarea name="message" id="formMessage" class="form__input"></textarea>
+        </div>
+        <div class="form__item">
+          <div class="form__label">Выберите кому вы хотите отправить</div>
+          <select name="mailto" class="select" id="">
+            <option value="sad25director@gmail.com" selected="selected">Директор</option>
+            <option value="sad25agruppa@gmail.com">Воспитатель группы А</option>
+            <option value="sad25bgruppa@gmail.com">Воспитатель группы Б</option>
+            <option value="sad25cgruppa@gmail.com">Воспитатель группы В</option>
+          </select>
+        </div>
+        <div class="form__item">
+          <div class="checkbox">
+            <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+            <label for="formAgreement"  class="checkbox__label">Я даю своё согласие на обработку персональных данных</label>
+            <div id="agreementError" class="error"></div>
+          </div>
+        </div>
+        <button type="submit"  class="form__btn form__btn--center form__btn--yellow form__btn--shadow">Отправить!</button>
+        <a href="other.html" class="back">Вернуться</a>
+      </form>
+    </div>
+  </div>
+  </div>
+  <script src="../js/mail.js"></script>
+</body>
+</html>
